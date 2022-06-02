@@ -32,7 +32,6 @@ body {
   background-color: #F9F9F1;
 }
 
-
 /*----------  Links  ----------*/
 a {
   color: #0F6DD2;
@@ -42,9 +41,7 @@ a:visited {
   color: #45474A;
 }
 
-
 /*----------  Images  ----------*/
-
 .photo {
   border: 1px solid #ddd;
   border-radius: 4px;
