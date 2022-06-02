@@ -1,0 +1,149 @@
+/*=============================================
+=        Main CSS for Hear Dutch Here         =
+=============================================*/
+/* Colors pallet */
+/* https://coolors.co/083d77-f2f2e3-ff595e-0b7a75-7b2d26 */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Universal */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+body {
+  font-family: Helvetica;
+  padding: 5px 25px;
+  font-size: 1.1em;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #F9F9F1;
+}
+
+/*----------  Links  ----------*/
+a {
+  color: #0F6DD2;
+}
+
+a:visited {
+  color: #45474A;
+}
+
+/*----------  Images  ----------*/
+.photo {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 120px;
+}
+
+.gif {
+  width: 15px;
+  height: 11px;
+}
+
+/*----------  Header  ----------*/
+header {
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#aside {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/*----------  Nav  ----------*/
+#navMain {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navMain li {
+  width: 25%;
+  border-bottom: 1px solid #8A8E93;
+}
+
+#navMain a:hover {
+  background-color: #8A8E93;
+  color: #000000;
+}
+
+#navMain a {
+  text-decoration: none;
+  color: #083D77;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  width: 100%;
+  overflow: auto;
+
+  float: left;
+  padding: 12px;
+  text-align: center;
+}
+
+#navMain a:hover {
+  background-color: #ccc;
+  /* Dark grey background on mouse-over */
+}
+
+.search-box input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px solid #8A8E93;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #ccc;
+}
+
+/*=============================================
+=            Mobile Settings                  =
+=============================================*/
+@media only screen and (max-width: 625px) {
+
+  #navMain,
+  #header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #navMain li {
+    width: 100%;
+  }
+
+}
+
+/*=====  End of Mobile Settings        ======*/
