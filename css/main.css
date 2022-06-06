@@ -101,8 +101,7 @@ header {
 }
 
 #navMain a:hover {
-  background-color: #ccc;
-  /* Dark grey background on mouse-over */
+  background-color: #cccccc;
 }
 
 .search-box input[type=text] {
@@ -123,8 +122,22 @@ header {
 }
 
 .search-box button:hover {
-  background: #ccc;
+  background: #cccccc;
 }
+
+/*----------  General Content  ----------*/
+#siteMapMain {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.mainDiv {
+  flex: 1 50%;
+  padding: 5px;
+}
+
 
 /*=============================================
 =            Mobile Settings                  =
@@ -142,6 +155,10 @@ header {
 
   #navMain li {
     width: 100%;
+  }
+
+  #siteMapMain {
+    flex-flow: column wrap;
   }
 
 }
