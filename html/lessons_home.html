@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Meta settings -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +12,49 @@
  Dutch Language Course Lessons Hear Dutch">
 
   <!-- Style sheets  -->
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Lessons: Home - Hear Dutch Here</title>
+
 </head>
 
 <body>
   <header>
-    <ul id="navMain"></ul>
-    <form action="https://www.google.com/cse" id="cse-search-box" target="_blank" class="search-box">
-      <input type="hidden" name="cx" value="partner-pub-8227618049446860:8aw9esorrty" />
-      <input type="hidden" name="ie" value="ISO-8859-1" />
-      <input type="text" name="q" size="31" />
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-    <audio id="musicplayer" type="audio/mp3"></audio>
+    <nav>
+      <ul id="navMain"></ul>
+      <form action="https://www.google.com/cse" id="cse-search-box" target="_blank" class="search-box">
+        <input type="hidden" name="cx" value="partner-pub-8227618049446860:8aw9esorrty" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q" size="31" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <audio id="musicplayer" type="audio/mp3"></audio>
     </nav>
-    <h1>Hear Dutch Here - Lessons: Home</h1>
-    <p>Learning Dutch - There's Never Been a Better Time</p>
   </header>
+  <section>
+    <h1>Lessons: Home</h1>
+  </section>
+    <footer>
+      <hr>
+      <p>
+        Copyright &copy; <a href="index.html">Marco Schuffelen</a> 2015.
+        All rights reserved.
+        This material may not be published, broadcast, rewritten, redistributed,
+        or hotlinked to.
+      </p>
+      <p>
+        Gij zult niet stelen
+        <a href="#" data-music-file="https://cdn.glitch.global/dec05fc1-f4aa-415c-950c-156580664c57/gijzultnietstelen.mp3?v=1654539557884">
+          <img src="https://cdn.glitch.global/dec05fc1-f4aa-415c-950c-156580664c57/spkr.gif?v=1654539291357" alt="click to hear"></a>
+        <i>'Thou shalt not steal'</i>
+      </p>
+    </footer>
 
-  <!-- Scripts -->
-  <script src="../js/jquery-2.1.3.min.js"></script>
-  <script type="text/javascript" src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
-  <script src="../js/playAudio.js"></script>
-  <script src="../js/main.js" type="module"></script>
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+    <script src="/js/playAudio.js"></script>
+    <script src="/js/main.js" type="module"></script>
 </body>
 
 </html>
