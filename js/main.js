@@ -4,6 +4,7 @@
 =============================================*/
 import { navLinks } from "./linksLists/mainNav.js";
 import * as siteMap from "./linksLists/siteMap.js";
+import * as main from "./linksLists/mainPage.js";
 
 /* Create a dynamic list from an array */
 function buildLinkList(myList, listElement) {
@@ -15,12 +16,26 @@ function buildLinkList(myList, listElement) {
 
     let aListItem = document.createElement('li');
     aListItem.appendChild(aLink);
+    if(element.text){
+     aListItem.append(element.text)
+    }
+    
     navDisplay.appendChild(aListItem);
   });
 }
 
 /* All Pages Navigation List */
 buildLinkList(navLinks, 'navMain');
+
+/* Index (Home Page) Lists */
+if (document.title == 'Hear Dutch Here') {
+  buildLinkList(main.mainPrograms, 'mainPrograms');
+  buildLinkList(main.mainPronunciation, 'mainPronunciation');
+  buildLinkList(main.mainHearRead, 'mainHearRead');
+  buildLinkList(main.mainQuickLinks, 'mainQuickLinks');
+  buildLinkList(main.mainTests, 'mainTests');
+  buildLinkList(main.mainHistory, 'mainHistory');
+}
 
 /* Site Map Lists */
 if (document.title == 'Site Map - Hear Dutch Here') {
