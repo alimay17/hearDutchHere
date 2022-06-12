@@ -30,7 +30,11 @@ buildLinkList(navLinks, 'navMain');
 /* Index (Home Page) Lists */
 if (document.title == 'Hear Dutch Here') {
   buildLinkList(main.mainPrograms, 'mainPrograms');
-
+  buildLinkList(main.mainPronunciation, 'mainPronunciation');
+  buildLinkList(main.mainHearRead, 'mainHearRead');
+  buildLinkList(main.mainQuickLinks, 'mainQuickLinks');
+  buildLinkList(main.mainTests, 'mainTests');
+  buildLinkList(main.mainHistory, 'mainHistory');
 }
 
 /* Site Map Lists */
