@@ -14,11 +14,11 @@ export const navLinks = [
   },
   {
     "name": "What's New",
-    "url": "/WhatsNew.html"
+    "url": "/html/whats_new.html"
   },
   {
     "name": "Support Me",
-    "url": "/support.html"
+    "url": "/html/support.html"
   },
   {
     "name": "Contact Me",
