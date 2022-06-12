@@ -1,11 +1,11 @@
 /*=============================================
-=   Main Javascript Page for Hear Dutch Here  =
+=   Main Javascript for Hear Dutch Here       =
 = Author: Alice Smith                         =
 =============================================*/
+import { navLinks } from "./linksLists/mainNav.js";
+import * as siteMap from "./linksLists/siteMap.js";
 
-import * as data from './data.js';
-
-/* Create a dynamic list from array data */
+/* Create a dynamic list from an array */
 function buildLinkList(myList, listElement) {
   const navDisplay = document.getElementById(listElement);
   myList.map(element => {
@@ -15,16 +15,21 @@ function buildLinkList(myList, listElement) {
 
     let aListItem = document.createElement('li');
     aListItem.appendChild(aLink);
-
     navDisplay.appendChild(aListItem);
   });
 }
 
-buildLinkList(data.lessonPages, 'lessonsList');
-buildLinkList(data.exercisePages, 'exercises')
-buildLinkList(data.vocabPages, 'vocab')
-buildLinkList(data.vocabPages2, 'vocab2')
-buildLinkList(data.vocabPages3, 'vocab3')
-buildLinkList(data.grammarPages, 'grammar')
-buildLinkList(data.culturePages, 'culture')
-buildLinkList(data.morePages, 'more')
+/* All Pages Navigation List */
+buildLinkList(navLinks, 'navMain');
+
+/* Site Map Lists */
+if (document.title == 'Site Map - Hear Dutch Here') {
+  buildLinkList(siteMap.lessonPages, 'lessonsList');
+  buildLinkList(siteMap.exercisePages, 'exercises')
+  buildLinkList(siteMap.vocabPages, 'vocab')
+  buildLinkList(siteMap.vocabPages2, 'vocab2')
+  buildLinkList(siteMap.vocabPages3, 'vocab3')
+  buildLinkList(siteMap.grammarPages, 'grammar')
+  buildLinkList(siteMap.culturePages, 'culture')
+  buildLinkList(siteMap.morePages, 'more')
+}
