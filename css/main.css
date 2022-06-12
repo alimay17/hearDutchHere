@@ -78,7 +78,7 @@ header {
 }
 
 #navMain li {
-  width: 25%;
+  width: 20%;
   border-bottom: 1px solid #8A8E93;
 }
 
@@ -135,6 +135,10 @@ header {
 
 .mainDiv {
   flex: 1 50%;
+  padding: 5px;
+}
+
+.mainDiv li{
   padding: 5px;
 }
 
