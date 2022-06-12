@@ -102,7 +102,7 @@ export const mainTests = [
 ]
 export const mainHistory = [
   {
-    "name": "The Beautiful Country",
+    "name": "Holland - The Beautiful Country",
     "url": "html/BeautyOfDutch.html",
   },
   {

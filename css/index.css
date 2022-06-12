@@ -145,6 +145,25 @@ header {
   padding: 5px;
 }
 
+.pageMain ul, .borderDiv {
+  border-left: 5px solid #083D77;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.pageMain h2{
+  background-color: #083D77;
+  color: #F9F9F1;
+  padding: 5px;
+  text-align: center;
+}
+
+h3 {
+  border-bottom: 1px solid #000;
+  width: 75%;
+}
+
 
 /*=============================================
 =            Mobile Settings                  =
