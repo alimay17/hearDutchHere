@@ -1,5 +1,6 @@
 /*=============================================
 =        Main CSS for Hear Dutch Here         =
+= Author: Alice Smith   
 =============================================*/
 /* Colors pallet */
 /* https://coolors.co/083d77-f2f2e3-ff595e-0b7a75-7b2d26 */
@@ -75,6 +76,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  padding: 5px;
 }
 
 #navMain li {
@@ -146,9 +149,24 @@ header {
 /*=============================================
 =            Mobile Settings                  =
 =============================================*/
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 890px) {
 
-  #navMain,
+  #navMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #navMain li {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  #siteMapMain {
+    flex-flow: column wrap;
+  }
   #header {
     width: 100%;
     display: flex;
@@ -157,14 +175,5 @@ header {
     justify-content: space-between;
   }
 
-  #navMain li {
-    width: 100%;
-  }
-
-  #siteMapMain {
-    flex-flow: column wrap;
-  }
-
 }
-
 /*=====  End of Mobile Settings        ======*/
