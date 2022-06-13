@@ -3,15 +3,3 @@
 = Author: Alice Smith   
 =============================================*/
 
-#about {
-  border-top: 5px solid #FF595E;
-  background-color: #f1f1f1;
-  padding: 10px 20px;
-}
-
-#about h2 {
-  text-align: center;
-}
-#about ul {
-  list-style-type: circle;
-}
