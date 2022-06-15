@@ -22,6 +22,7 @@ export const navLinks = [
   },
   {
     "name": "Contact Me",
-    "url": "https://www.facebook.com/HearDutchHere"
+    "url": "https://www.facebook.com/HearDutchHere",
+    "target": "_blank"
   },
 ]

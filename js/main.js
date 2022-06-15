@@ -19,6 +19,9 @@ function buildLinkList(myList, listElement) {
     if(element.text){
      aListItem.append(element.text)
     }
+    if(element.target){
+      aLink.setAttribute('target', element.target)
+    }
     
     navDisplay.appendChild(aListItem);
   });

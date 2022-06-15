@@ -65,7 +65,7 @@ header {
   justify-content: space-evenly;
 }
 
-#aside {
+.textAside {
   font-size: 0.9em;
   font-style: italic;
 }
@@ -134,6 +134,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
+  margin: 5px;
 }
 
 .mainDiv {
@@ -162,6 +163,36 @@ header {
 h3 {
   border-bottom: 1px solid #000;
   width: 75%;
+}
+
+.about {
+  border-top: 5px solid #FF595E;
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+}
+
+.about h2 {
+  text-align: center;
+}
+.about ul {
+  list-style-type: circle;
+}
+
+.imgCardDiv {
+    max-width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.imgCard {
+  width: 100%
+}
+
+.imgCardText {
+  padding: 10px 20px;
 }
 
 
