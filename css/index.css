@@ -134,6 +134,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
+  margin: 5px;
 }
 
 .mainDiv {
@@ -175,6 +176,20 @@ h3 {
 }
 .about ul {
   list-style-type: circle;
+}
+
+.imgCardDiv {
+    width: 45%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgCard {
+  width: 100%
+}
+
+.imgCardText {
+  padding: 10px 20px;
 }
 
 
